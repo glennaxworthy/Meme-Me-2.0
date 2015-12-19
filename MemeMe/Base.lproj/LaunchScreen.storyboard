@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Udemy" translatesAutoresizingMaskIntoConstraints="NO" id="eQf-jS-lXA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaL-JN-Jg3">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="JQX-ay-tqO" userLabel="height = 80"/>
+                                </constraints>
+                                <string key="text">MemeMe v2.0
+Copyright 2015 Glenn Axworthy</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JQX-ay-tqO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="JQX-ay-tqO"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CaL-JN-Jg3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="9FS-oS-TPR"/>
+                            <constraint firstItem="eQf-jS-lXA" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="Lx2-a0-MWn"/>
+                            <constraint firstItem="eQf-jS-lXA" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="MFB-Dj-q2D"/>
+                            <constraint firstItem="eQf-jS-lXA" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="QEB-48-ZVJ"/>
+                            <constraint firstItem="CaL-JN-Jg3" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" constant="20" id="c8s-Er-d1k">
+                                <variation key="widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="eQf-jS-lXA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hb5-8B-qJg"/>
+                            <constraint firstItem="CaL-JN-Jg3" firstAttribute="centerX" secondItem="eQf-jS-lXA" secondAttribute="centerX" id="tG6-Sf-DYC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eQf-jS-lXA"/>
+                                <exclude reference="CaL-JN-Jg3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9FS-oS-TPR"/>
+                                <exclude reference="c8s-Er-d1k"/>
+                                <exclude reference="tG6-Sf-DYC"/>
+                                <exclude reference="Lx2-a0-MWn"/>
+                                <exclude reference="MFB-Dj-q2D"/>
+                                <exclude reference="QEB-48-ZVJ"/>
+                                <exclude reference="hb5-8B-qJg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eQf-jS-lXA"/>
+                                <include reference="CaL-JN-Jg3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9FS-oS-TPR"/>
+                                <include reference="c8s-Er-d1k"/>
+                                <include reference="tG6-Sf-DYC"/>
+                                <include reference="Lx2-a0-MWn"/>
+                                <include reference="MFB-Dj-q2D"/>
+                                <include reference="QEB-48-ZVJ"/>
+                                <include reference="hb5-8B-qJg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Udemy" width="768" height="1024"/>
+    </resources>
+</document>
